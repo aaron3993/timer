@@ -4,7 +4,7 @@ const timer = input => {
   for (let arg of input) {
     if (!isNaN(arg) && arg >= 0) {
       setTimeout(() => {
-        process.stdout.write('\x07');
+        process.stdout.write('.');
       }, arg * 1000)
     }
   }
